@@ -1,0 +1,328 @@
+html{
+    scroll-behavior: smooth;
+}
+.menu {
+    display: flex;
+}
+
+#menuicon {
+    width: 81px;
+    margin: 10px;
+    
+    padding-left: 20px;
+
+}
+
+.navbar {
+    background-color: rgb(35, 34, 34);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    border: 0.5px solid rgb(213, 202, 202);
+    box-shadow: 2px 2px 5px grey;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    z-index:2;
+}
+
+#Home::before {
+    background: url('everestbg.jpg');
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    height: 625px;
+    width: 102%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+.navitems {
+    display: flex;
+}
+
+.navitems ul {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 0px;
+}
+
+.navitems li {
+    list-style: none;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 25px;
+    
+    
+}
+.navbar li a{
+    text-decoration: none;
+    color: beige;
+    padding:10px;
+}
+.navbar ul li a:hover{
+    animation-duration: 1s;
+    animation-name: hoverdelay;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes hoverdelay{
+    from{
+        text-decoration: none;
+        color: beige;
+        padding:10px;
+        border-radius: 60px;
+    
+    }
+    
+    to{
+        color: black;
+        background-color: rgba(255, 255, 255,0.5);
+        border-radius: 60px;
+    }
+}
+.logo{
+    position: absolute;
+    right:15px;
+}
+#imglogo{
+    width:60px;
+    padding:30px;
+
+}
+#heartlogo{
+    width:80px;
+    padding-bottom: 20px;;
+    
+}
+#Home {
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 8rem;
+    justify-content: space-evenly;
+}
+
+#barcode {
+    width: 200px;
+    height: 200px;
+    margin:5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border: 2rem solid rgb(27, 25, 69);
+}
+
+#deliverybox {
+    width:200px;
+    height: 200px;
+    margin:5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border: 2rem solid rgb(46, 10, 10);
+    background-color: rgb(221, 117, 117);
+    z-index: 1;
+}
+.home1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index:1;
+}
+.home2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#deliverytext{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0rem;
+    font-family: "Sofia";
+    border: 5px solid #745858;
+    background-color: rgb(255 255 255 / 68%);
+}
+#barcodetext{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0rem;
+    font-family: "Sofia";
+    border: 5px solid #745858;
+    background-color: rgb(255 255 255 / 68%);
+}
+#buffer{
+    width: 30px;
+    padding-right: 50px;
+    transition: all 0.5s ease-in-out;
+}
+#buffer:hover{
+    transform: rotate(360deg);
+}
+#Fruits{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: -10px;
+    padding: -28px;
+    top:10px;
+}
+#Fruits::before{
+    background: url('fruitbg.jpg');
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 47px;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    margin:0px;
+    padding: 0px;
+}
+.fruit1:hover{
+    animation-duration: 1s;
+    animation-name: textpush;
+    animation-fill-mode: forwards;
+    
+}
+.fruit2:hover{
+    animation-duration: 1s;
+    animation-name: textpush;
+    animation-fill-mode: forwards;
+}
+.vegetable1:hover{
+    animation-duration: 1s;
+    animation-name: textpush;
+    animation-fill-mode: forwards;
+}
+.vegetable2:hover{
+    animation-duration: 1s;
+    animation-name: textpush;
+    animation-fill-mode: forwards;
+}
+.bread1:hover{
+    animation-duration: 1s;
+    animation-name: textpush;
+    animation-fill-mode: forwards;
+}
+.bread2:hover{
+    animation-duration: 1s;
+    animation-name: textpush;
+    animation-fill-mode: forwards;
+}
+@keyframes textpush{
+    from{   
+    padding-left: 50px;
+    
+    }
+    to{
+        padding-left: 70px;
+    }
+}
+.fruit1, .fruit2{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 900;
+
+}
+
+#Vegetables{
+    top: 86px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: -10px;
+    padding: -28px;
+}
+#Vegetables::before{
+    background: url('vegetablesbg.jpg');
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 47px;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    margin:0px;
+    padding: 0px;
+}
+
+.vegetable1 , .vegetable2{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 900;
+}
+#Breads{
+    top: 82px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: -10px;
+    padding: -28px;
+}
+#Breads::before{
+    background: url('breadbg.jpg');
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 127px;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    margin:0px;
+    padding: 0px;
+}
+
+.bread1 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-top: 160px;
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 900;
+}
+.bread2{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-top: 62px;
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 900;
+}
